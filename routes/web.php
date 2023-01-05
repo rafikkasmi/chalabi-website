@@ -41,6 +41,7 @@ Route::get('category/{slug}', [UserFrontendController::class, 'viewCategory']);
 Route::get('category/{cate_slug}/{prod_slug}', [UserFrontendController::class, 'viewProduct']);
 
 Route::get('products', [UserFrontendController::class, 'productsPage']);
+Route::get('search', [UserFrontendController::class, 'searchPage']);
 
 
 // Route::get('home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -102,5 +103,7 @@ Route::middleware(['auth', 'isAdmin'])->prefix("admin")->group(function () {
     Route::get('view-user/{id}', [DashboardController::class, 'viewUser']);
     Route::put('update-login-email', [DashboardController::class, 'updateEmail']);
     Route::put('update-password', [DashboardController::class, 'updatePassword']);
+
+
     
 });

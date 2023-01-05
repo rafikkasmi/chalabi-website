@@ -35,7 +35,7 @@
 
                         <div class="col-lg-2 col-md-3 col-4">
                             <div class="logo">
-                                <a href="/"><img src="images/logo/logo.png" alt=""></a>
+                                <a href="/"><img src="/images/logo/logo.png" alt=""></a>
                             </div>
                         </div>
 
@@ -44,8 +44,8 @@
                                 <div class="search_btn">
                                     <a href="#"><i class="ion-ios-search-strong"></i></a>
                                     <div class="dropdown_search">
-                                        <form action="#">
-                                            <input type="text" placeholder="Search Product ....">
+                                        <form action="{{ url('/search') }}">
+                                            <input type="text" name="query" placeholder="Search Product ....">
                                             <button type="submit"><i class="ion-ios-search-strong"></i></button>
                                         </form>
                                     </div>
@@ -66,13 +66,13 @@
                         <div class="col-12">
                             <div class="main_menu_inner">
                                 <div class="logo_sticky">
-                                    <a href="#"><img src="images/logo/logo.png" alt="logo"></a>
+                                    <a href="#"><img src="/images/logo/logo.png" alt="logo"></a>
                                 </div>
                                 <div class="main_menu">
                                     <nav>
                                         <ul>
                                             <li class="active">
-                                                <a href="#">Accueil</i></a>
+                                                <a href="/">Accueil</i></a>
                                             </li>
                                             <li>
                                                 <a href="#">Categories <i class="ion-chevron-down"></i></a>

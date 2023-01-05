@@ -61,21 +61,34 @@ class FrontendController extends Controller
         $products = Product::orderBy('id', 'desc')->with('images')->with('brand');
         $brands= Brand::all();
         $categories= Category::all();
-        
-        if($request->category){
+        $category=null;
+        if($request->category != null){
+            $category=Category::find($request->category);
             $products->where('cate_id', $request->category);
-        }else if($request->search){
-            $products->where('name', 'like', '%'.$request->search.'%');
-        }else if($request->brand){
+        }else if($request->brand != null || $request->brand != ''){
             $products->where('brand', $request->brand);
-        }else if($request->gender){
-            $products->where('gender', $request->g);
-        }   
+        }else if($request->gender != null || $request->gender!= '' ){
+            $products->where('gender', $request->gender);
+        }else if($request->type != null || $request->type != ''){
+            $products->where('type', $request->type);
+        }      
 
         $products=$products->paginate(12);
         $store_data = StoreData::first();
 
-        return view('frontend.products.index', compact('products','store_data','brands','categories'));
+        return view('frontend.products.index', compact('products','store_data','brands','categories','category'));
+    }
 
+    public function searchPage(Request $request){
+        //get products and query by category or search or brand or gender or price
+        if($request->get('query') ==null) return redirect('/');
+        $products = Product::orderBy('id', 'desc')->with('images')->with('brand')->where('name', 'like', '%'.$request->get('query').'%');
+        $brands= Brand::all();
+        $categories= Category::all();        
+
+        $products=$products->paginate(12);
+        $store_data = StoreData::first();
+
+        return view('frontend.products.search', compact('products','store_data','brands','categories'));
     }
 }

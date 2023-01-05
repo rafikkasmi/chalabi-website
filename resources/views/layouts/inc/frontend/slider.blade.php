@@ -9,7 +9,7 @@
                             <div class="slider_content">
                                 <h1 class="mb-3">{{$store_data['slider_headline'.$i]}}</h1>
                                 <p class="slider_price">{{$store_data['slider_text'.$i]}}</p>
-                                <a href="#" class="button">Nos Produits</a>
+                                <a href="/products" class="button">Nos Produits</a>
                             </div>
                         </div>
                     </div>

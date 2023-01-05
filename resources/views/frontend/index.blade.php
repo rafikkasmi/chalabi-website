@@ -84,7 +84,7 @@ Page D'Accueil
                         <div class="banner_text">
                             <h2>Nos Collections de Tendances </h2>
                             <span>Les meilleurs designs disponible dans le marché.</span>
-                            <a href="#">Shop Now</a>
+                            <a href="/products">Shop Now</a>
                         </div>
                     </div>
                 </div>
