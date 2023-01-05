@@ -151,6 +151,23 @@
         .modal_price .weight , .modal_price .brand{
             color:grey;
         }
+
+        /* width */
+        ::-webkit-scrollbar {
+        width: 10px;
+        background:#a6731b;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+        background: #242424; 
+        }
+        
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+        background: #a6731b; 
+        border-radius:10px;
+        }
     </style>
 </body>
 
