@@ -6,9 +6,10 @@
                         <div class="col-lg-6 col-md-6">
                             <div class="social_icone">
                                 <ul>
-                                    <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-                                    <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-                                    <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                                    <li><a href="https://www.facebook.com/Bijouteriechalabi"><i class="ion-social-facebook"></i></a></li>
+                                    <li><a href="https://twitter.com/BijouterieChal1"><i class="ion-social-twitter"></i></a></li>
+                                    <li><a href="https://www.instagram.com/bijouteriechalabi"><i class="ion-social-instagram"></i></a></li>
+                                    <li><a href="https://www.youtube.com/@bijouteriechalabi9694"><i class="ion-social-youtube"></i></a></li>
                                 </ul>
                             </div>
                         </div>

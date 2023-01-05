@@ -65,11 +65,14 @@ class FrontendController extends Controller
         if($request->category != null){
             $category=Category::find($request->category);
             $products->where('cate_id', $request->category);
-        }else if($request->brand != null || $request->brand != ''){
+        }
+        if($request->brand != null || $request->brand != ''){
             $products->where('brand', $request->brand);
-        }else if($request->gender != null || $request->gender!= '' ){
+        }
+        if($request->gender != null || $request->gender!= '' ){
             $products->where('gender', $request->gender);
-        }else if($request->type != null || $request->type != ''){
+        }
+        if($request->type != null || $request->type != ''){
             $products->where('type', $request->type);
         }      
 
