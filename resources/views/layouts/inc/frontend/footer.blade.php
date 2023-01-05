@@ -34,7 +34,7 @@
                                 <script>
                                     document.write(new Date().getFullYear())
                                 </script>,                              
-                                <a href="#">Chalabi Jewelry</a> All rights Reserved.</p>
+                                <a href="#">Bijouterie Chalabi</a> All rights Reserved.</p>
                             </div>
                         </div>
                     </div>
