@@ -6,7 +6,7 @@
    <div class="card-header">
       <h2>Modifier les Données de la Boutique</h2>
    </div>
-<div class="table-responsive">
+<div class="card-body">
       <form action="{{ url('admin/update-store-data/') }}" method="POST">
          @csrf
          @method('PUT')
@@ -26,7 +26,11 @@
                <label for="poids">Adresse :</label>
                <input type="text" name="address" id="address" value="{{ $storeData->address }}" class="form-control border p-2">
             </div>
-           
+
+             <div class="col-md-12 mb-3">
+               <label for="poids">Email :</label>
+               <input type="email" name="email" id="email" value="{{ $storeData->email }}" class="form-control border p-2">
+            </div>
            
             <div class="col-md-12 mb-3">
                <button type="submit" class="btn btn-primary">Modifier</button>

@@ -20,7 +20,8 @@ class StoreDataController extends Controller
        StoreData::first()->update([
             'phone_number' => $request->phone_number,
             'secondary_phone_number' => $request->secondary_phone_number,
-            'address' => $request->address
+            'address' => $request->address,
+            'email' => $request->email
        ]);
         return redirect('/admin/store-data')->with('status', 'Les Données sont modifiés avec succes!');
     }

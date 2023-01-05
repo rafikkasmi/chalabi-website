@@ -14,9 +14,31 @@ class DashboardController extends Controller
         return view('admin.users.index', compact('users'));
     }
 
-    public function viewUser($id)
+    public function updateEmail(Request $request)
     {
-        $user = User::find($id);
-        return view('admin.users.view', compact('user'));
+        $request->validate([
+            'email' => 'required|email|unique:users,email,' . $request->user()->id,
+        ]);
+
+        $request->user()->update($request->all());
+        return redirect("/admin/users")->with('status', 'Email modifié avec succes !');
+    }
+
+    public function updatePassword(Request $request)
+    {
+        $request->validate([
+            'currentPassword' => 'required',
+            'newPassword' => 'required',
+            'passwordConfirmation' => 'required|same:newPassword',
+        ]);
+        
+        if(!\Hash::check($request->currentPassword, $request->user()->password)) {
+            return redirect()->back()->with('error', 'Mot de passe incorrect !');
+        }
+        
+        $request->user()->password = bcrypt($request->newPassword);
+        $request->user()->save();
+
+        return redirect("/admin/users")->with('status', 'Mot de passe modifié avec succes !');
     }
 }

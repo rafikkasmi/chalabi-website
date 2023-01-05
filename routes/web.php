@@ -100,4 +100,7 @@ Route::middleware(['auth', 'isAdmin'])->prefix("admin")->group(function () {
 
     Route::get('users', [DashboardController::class, 'users']);
     Route::get('view-user/{id}', [DashboardController::class, 'viewUser']);
+    Route::put('update-login-email', [DashboardController::class, 'updateEmail']);
+    Route::put('update-password', [DashboardController::class, 'updatePassword']);
+    
 });

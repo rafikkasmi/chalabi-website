@@ -8,7 +8,7 @@
    <!-- CSRF Token -->
    <meta name="csrf-token" content="{{ csrf_token() }}">
 
-   <title>{{ config('app.name', 'Chalabi Store Admin Panel') }}</title>
+   <title>Chalabi Store Admin Panel</title>
 
    <!-- Font Awesome Icons -->
    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
@@ -66,6 +66,16 @@
             title: 'Message!',
             text: "{{ session('status') }}",
             confirmButtonText: 'Cool'
+         })
+      </script>
+   @endif
+
+   @if (session('error'))
+      <script>
+         Swal.fire({
+            title: 'Erreur!',
+            text: "{{ session('error') }}",
+            confirmButtonText: 'Ok'
          })
       </script>
    @endif

@@ -48,7 +48,7 @@
             </div>
              <div class="col-md-12 mb-3">
                <label for="poids">Poids :</label>
-               <input type="number" name="poids" id="poids" class="form-control border p-2">
+               <input type="number" step="0.01" name="poids" id="poids" class="form-control border p-2">
             </div>
             <div class="col-md-12 mb-3">
                <label for="desc">Description</label>
