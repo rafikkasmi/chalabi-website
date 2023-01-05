@@ -28,7 +28,12 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="copyright_area">
-                                <p>Copyright &copy; 2022 <a href="#">Challabi Jewelry</a> All rights Reserved.</p>
+                                <p>Copyright
+                                    ©
+                                <script>
+                                    document.write(new Date().getFullYear())
+                                </script>,                              
+                                <a href="#">Challabi Jewelry</a> All rights Reserved.</p>
                             </div>
                         </div>
                     </div>
