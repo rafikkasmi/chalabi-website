@@ -18,7 +18,7 @@ class FrontendController extends Controller
         $trending_category = Category::take(15)->get();
         $store_data = StoreData::first();
         $prices_table = PricesTable::all();
-        $newestPriceChange= PricesTable::orderBy('updated_at', 'desc')->first()->updated_at->format('d/m/Y');
+        $newestPriceChange= date('d/m/Y');
         $brands= Brand::all();
         $categories= Category::all();
 

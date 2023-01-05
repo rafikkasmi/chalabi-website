@@ -111,16 +111,7 @@
                                             nisi voluptas consequatur tempora, recusandae nemo blanditiis eaque odit
                                             voluptatibus voluptatem, ipsa incidunt fugiat a.</p>
                                     </div>
-                                    <div class="modal_social">
-                                        <h2>Share this Product</h2>
-                                        <ul>
-                                            <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-                                            <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-                                            <li><a href="#"><i class="ion-social-rss"></i></a></li>
-                                            <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
-                                            <li><a href="#"><i class="ion-social-youtube"></i></a></li>
-                                        </ul>
-                                    </div>
+
                                 </div>
                             </div>
                         </div>

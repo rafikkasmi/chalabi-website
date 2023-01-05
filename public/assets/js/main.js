@@ -209,15 +209,10 @@
         $(".product_navactive").resize();
     });
 
-    $(".product_navactive a").on("click", function (e) {
-        e.preventDefault();
-        var $href = $(this).attr("href");
-        $(".product_navactive a").removeClass("active");
-        $(this).addClass("active");
-        $(".product-details-large .tab-pane").removeClass("active show");
-        $(".product-details-large " + $href).addClass("active show");
-    });
+
 })(jQuery);
+
+
 
 
 $('[data-target="#modal_box"]').click(function () {
@@ -225,7 +220,6 @@ $('[data-target="#modal_box"]').click(function () {
 
 
     let data = JSON.parse($(this).attr("data"));
-
     $('.modal_title h2').html(data.name);
     if (data.description == null) {
         $('.modal_description').hide();
@@ -252,14 +246,14 @@ $('[data-target="#modal_box"]').click(function () {
     ulImage.empty();
     let mainImage = `<div class="tab-pane fade show active" id="tab1" role="tabpanel">
                                             <div class="modal_tab_img">
-                                                <a href="#"><img src="${data.image}" alt=""></a>
+                                                <a href="#"><img src="/assets/uploads/products/${data.image}" alt=""></a>
                                             </div>
                                         </div>`
     ulImage.append(mainImage);
-    for (let i = 0; i < data.images.length; i++) {
+    for (let i = 1; i <= data.images.length; i++) {
         let image = `<div class="tab-pane fade" id="tab${i + 1}" role="tabpanel">
                                             <div class="modal_tab_img">
-                                                <a href="#"><img src="${data.images[i]}" alt=""></a>
+                                                <a href="#"><img src="/assets/uploads/products/${data.images[i - 1].path}" alt=""></a>
                                             </div>
                                         </div>`
         ulImage.append(image);
@@ -268,16 +262,16 @@ $('[data-target="#modal_box"]').click(function () {
     const ulNav = $('.product_navactive')
     ulNav.empty();
     let mainNav = `<li>
-                                        <a href="#tab1" class="nav-link active" data-toggle="tab" role="tab"
+                                        <a href="#tab1" class="nav-link" data-toggle="tab" role="tab"
                                                     aria-controls="tab1" aria-selected="false"><img
-                                                        src="${data.image}" alt=""></a>
+                                                        src="/assets/uploads/products/${data.image}" alt=""></a>
                                             </li>`
     ulNav.append(mainNav);
-    for (let i = 0; i < data.images.length; i++) {
+    for (let i = 1; i <= data.images.length; i++) {
         let nav = `<li>
                                         <a href="#tab${i + 1}" class="nav-link" data-toggle="tab" role="tab"
                                                     aria-controls="tab1" aria-selected="false"><img
-                                                        src="${data.images[i]}" alt=""></a>
+                                                        src="/assets/uploads/products/${data.images[i - 1].path}" alt=""></a>
                                             </li>`
         ulNav.append(nav);
     }
@@ -285,7 +279,7 @@ $('[data-target="#modal_box"]').click(function () {
 
     $(".product_navactive").owlCarousel({
         autoplay: false,
-        loop: true,
+        // loop: true,
         nav: true,
         items: 4,
         dots: false,
@@ -312,5 +306,12 @@ $('[data-target="#modal_box"]').click(function () {
     $('.product_navactive').show();
 
 
-
+    $(".product_navactive a").on("click", function (e) {
+        e.preventDefault();
+        var $href = $(this).attr("href");
+        $(".product_navactive a").removeClass("active");
+        $(this).addClass("active");
+        $(".product-details-large .tab-pane").removeClass("active show");
+        $(".product-details-large " + $href).addClass("active show");
+    });
 })
