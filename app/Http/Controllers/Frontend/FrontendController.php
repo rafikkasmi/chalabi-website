@@ -14,7 +14,7 @@ class FrontendController extends Controller
 {
     public function index()
     {
-        $products = Product::inRandomOrder()->with('images')->with('brand')->limit(10)->get();
+        $products = Product::inRandomOrder()->with('images')->with('brand')->get();
         $trending_category = Category::take(15)->get();
         $store_data = StoreData::first();
         $prices_table = PricesTable::all();
