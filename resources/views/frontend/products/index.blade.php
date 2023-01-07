@@ -11,7 +11,7 @@
       <p class="links mb-6">
          <a href="{{ url('products') }}">Produits</a> /  
          @if($category!=null)
-         <a href="{{ url('products',['category'=>$category->id]) }}">{{ $category->name }}</a> 
+         <a href="/products?category={{$category->id}}">{{ $category->name }}</a> 
          @endif
       </p>
    </div>
