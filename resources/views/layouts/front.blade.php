@@ -5,6 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bijouterie Chalabi | @yield('title')</title>
+    <meta name="title" content="Bijouterie Chalabi , l'éclat Brillant ne provient que de nos Bijoux">
+<meta name="description" content="À la recherche d'un bijou ? Découvrez notre collection et ses nombreux modèles de bijoux mode et tendance… Bracelets, colliers, chaînes et bagues … ">
+<meta name="keywords" content="bijouterie,or,diamond,ذهب,parure,bracelets,bagues,montres">
+<meta name="robots" content="index, follow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="French">
+<meta property="og:title" content=Bijouterie Chalabi , l'éclat Brillant ne provient que de nos Bijoux>
+<meta property="og:site_name" content=Bijouteire Chalabi>
+<meta property="og:url" content=https://bijouteriechalabi.com/>
+<meta property="og:description" content=À la recherche d'un bijou ? Découvrez notre collection et ses nombreux modèles de bijoux mode et tendance… Bracelets, colliers, chaînes et bagues … >
+<meta property="og:type" content=website>
+<meta property="og:image" content=https://bijouteriechalabi.com/og.jpg>
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
@@ -12,7 +24,7 @@
     <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-
+	<link rel="icon" type="image/x-icon" href="/favicon.ico">
     <!-- CSS only -->
     <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
     <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
