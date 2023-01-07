@@ -11,12 +11,12 @@
 <meta name="robots" content="index, follow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="language" content="French">
-<meta property="og:title" content=Bijouterie Chalabi , l'éclat Brillant ne provient que de nos Bijoux>
-<meta property="og:site_name" content=Bijouteire Chalabi>
-<meta property="og:url" content=https://bijouteriechalabi.com/>
-<meta property="og:description" content=À la recherche d'un bijou ? Découvrez notre collection et ses nombreux modèles de bijoux mode et tendance… Bracelets, colliers, chaînes et bagues … >
-<meta property="og:type" content=website>
-<meta property="og:image" content=https://bijouteriechalabi.com/og.jpg>
+<meta property="og:title" content="Bijouterie Chalabi , l'éclat Brillant ne provient que de nos Bijoux">
+<meta property="og:site_name" content="Bijouteire Chalabi">
+<meta property="og:url" content="https://bijouteriechalabi.com"/>
+<meta property="og:description" content="À la recherche d'un bijou ? Découvrez notre collection et ses nombreux modèles de bijoux mode et tendance… Bracelets, colliers, chaînes et bagues …" >
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://bijouteriechalabi.com/og.jpg">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
